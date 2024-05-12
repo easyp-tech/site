@@ -16,7 +16,7 @@ export const ru = defineConfig({
         },
 
         editLink: {
-            pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+            pattern: 'https://github.com/easyp-tech/site/edit/main/docs/:path',
             text: 'Редактировать страницу'
         },
 
@@ -57,7 +57,7 @@ function nav(): DefaultTheme.NavItem[] {
             items: [
                 {
                     text: 'Изменения',
-                    link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
+                    link: 'https://github.com/easyp-tech/easyp/blob/main/CHANGELOG.md'
                 }
             ]
         }

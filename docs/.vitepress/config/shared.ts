@@ -34,10 +34,9 @@ export const shared = defineConfig({
         ['meta', {name: 'theme-color', content: '#5f67ee'}],
         ['meta', {property: 'og:type', content: 'website'}],
         ['meta', {property: 'og:locale', content: 'en'}],
-        ['meta', {property: 'og:title', content: 'VitePress | Vite & Vue Powered Static Site Generator'}],
-        ['meta', {property: 'og:site_name', content: 'VitePress'}],
-        ['meta', {property: 'og:image', content: 'https://vitepress.dev/vitepress-og.jpg'}],
-        ['meta', {property: 'og:url', content: 'https://vitepress.dev/'}],
+        ['meta', {property: 'og:title', content: 'EasyP | Vite & Vue Powered Static Site Generator'}],
+        ['meta', {property: 'og:site_name', content: 'EasyP'}],
+        ['meta', {property: 'og:url', content: 'https://easyp.tech/'}],
         ['script', {src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: ''}]
     ],
 
@@ -45,7 +44,7 @@ export const shared = defineConfig({
         logo: {src: '/logo-mini.svg', width: 24, height: 24},
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+            {icon: 'github', link: 'https://github.com/easyp-tech/easyp'}
         ],
 
         search: {
@@ -53,11 +52,11 @@ export const shared = defineConfig({
             options: {
                 appId: '8J64VVRP8K',
                 apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-                indexName: 'vitepress',
+                indexName: 'easyp',
                 locales: { ...ruSearch }
             }
         },
 
-        carbonAds: {code: 'CEBDT27Y', placement: 'vuejsorg'}
+        carbonAds: {code: 'CEBDT27Y', placement: 'easyp-tech'}
     }
 })
