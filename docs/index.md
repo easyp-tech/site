@@ -17,7 +17,7 @@ hero:
       link: /guide/introduction/quickstart
   image:
     src: /logo-large.webp
-    alt: EasyP
+    alt: EasyP-logo
 
 features:
   - title: Linter
