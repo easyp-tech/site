@@ -36,6 +36,7 @@ export const shared = defineConfig({
         ['meta', {property: 'og:title', content: 'EasyP | Easy modern protobuf tooling for all your needs.'}],
         ['meta', {property: 'og:site_name', content: 'EasyP'}],
         ['meta', {property: 'og:url', content: 'https://easyp.tech/'}],
+        ['meta', { property: 'og:image', content: 'https://files.easyp.tech/Screenshot%202024-05-12%20at%2012.49.50.png' }],
         ['script', {src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: ''}]
     ],
 
@@ -47,5 +48,21 @@ export const shared = defineConfig({
         ],
 
         carbonAds: {code: 'CEBDT27Y', placement: 'easyp-tech'}
-    }
+    },
+
+    vite: {
+        plugins: [
+            {
+                name: 'patch-vitepress-symbol',
+                transform(code, id) {
+                    if (id.includes('vitepress/dist/client/app/data.js')) {
+                        return code.replace(
+                            'const dataSymbol = Symbol();',
+                            'const dataSymbol = "__vitepress_data__";'
+                        )
+                    }
+                }
+            }
+        ]
+    },
 })
