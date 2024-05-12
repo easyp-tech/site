@@ -1,5 +1,5 @@
-import { createRequire } from 'module'
-import { defineConfig, type DefaultTheme } from 'vitepress'
+import {createRequire} from 'module'
+import {defineConfig, type DefaultTheme} from 'vitepress'
 
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
@@ -21,8 +21,8 @@ export const ru = defineConfig({
         },
 
         footer: {
-            message: 'Опубликовано под лицензией MIT.',
-            copyright: '© 2019 – настоящее время, Эван Ю'
+            message: 'Распространяется под лицензией Apache Version 2.0.',
+            copyright: 'Авторские права © 2024 представлены Эдгаром Сипки и Василием Близнецовым'
         },
 
         outline: {label: 'Содержание страницы'},
@@ -102,7 +102,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                         {text: 'PACKAGE_LOWER_SNAKE_CASE', link: 'cli/linter/rules/package-lower-snake-case'},
                         {text: 'PACKAGE_SAME_CSHARP_NAMESPACE', link: 'cli/linter/rules/package-same-csharp-namespace'},
                         {text: 'PACKAGE_SAME_GO_PACKAGE', link: 'cli/linter/rules/package-same-go-package'},
-                        {text: 'PACKAGE_SAME_JAVA_MULTIPLE_FILES', link: 'cli/linter/rules/package-same-java-multiple-files'},
+                        {
+                            text: 'PACKAGE_SAME_JAVA_MULTIPLE_FILES',
+                            link: 'cli/linter/rules/package-same-java-multiple-files'
+                        },
                         {text: 'PACKAGE_SAME_JAVA_PACKAGE', link: 'cli/linter/rules/package-same-java-package'},
                         {text: 'PACKAGE_SAME_PHP_NAMESPACE', link: 'cli/linter/rules/package-same-php-namespace'},
                         {text: 'PACKAGE_SAME_RUBY_PACKAGE', link: 'cli/linter/rules/package-same-ruby-package'},
