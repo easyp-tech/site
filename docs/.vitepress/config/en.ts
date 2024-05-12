@@ -22,7 +22,7 @@ export const en = defineConfig({
 
         footer: {
             message: 'Released under the Apache Version 2.0 License.',
-            copyright: 'Copyright © 2024-present Edgar Sipki and Vasiliy Bliznetsov'
+            copyright: 'Copyright © 2024-present Edgar Sipki and Vasilii Bliznetsov'
         }
     }
 })
@@ -33,6 +33,16 @@ function nav(): DefaultTheme.NavItem[] {
             text: 'Guide',
             link: 'guide/introduction/what-is',
             activeMatch: '/guide/introduction/what-is'
+        },
+        {
+            text: 'Team',
+            link: '/team',
+            activeMatch: '/team'
+        },
+        {
+            text: 'Donation 🎁',
+            link: '/donate',
+            activeMatch: '/donate'
         },
         {
             text: 'v0.2.0',
@@ -69,7 +79,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                         {text: 'DIRECTORY_SAME_PACKAGE', link: 'cli/linter/rules/directory-same-package'},
                         {text: 'PACKAGE_DEFINED', link: 'cli/linter/rules/package-defined'},
                         {text: 'PACKAGE_DIRECTORY_MATCH', link: 'cli/linter/rules/package-directory-match'},
-                        {text: 'PACKAGE_SAME_DIRECTORY Page', link: 'cli/linter/rules/package-same-directory'},
+                        {text: 'PACKAGE_SAME_DIRECTORY', link: 'cli/linter/rules/package-same-directory'},
 
                         {text: 'ENUM_FIRST_VALUE_ZERO', link: 'cli/linter/rules/enum-first-value-zero'},
                         {text: 'ENUM_NO_ALLOW_ALIAS', link: 'cli/linter/rules/enum-no-allow-alias'},

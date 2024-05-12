@@ -13,7 +13,7 @@ hero:
       text: What is EasyP?
       link: /guide/introduction/what-is
     - theme: alt
-      text: quickstart
+      text: Quickstart
       link: /guide/introduction/quickstart
   image:
     src: /logo-large.webp

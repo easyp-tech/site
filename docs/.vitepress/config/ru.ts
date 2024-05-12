@@ -53,6 +53,16 @@ function nav(): DefaultTheme.NavItem[] {
             activeMatch: '/ru/guide/'
         },
         {
+            text: 'Команда',
+            link: '/ru/team',
+            activeMatch: '/ru/team'
+        },
+        {
+            text: 'Поддержать 🎁',
+            link: '/ru/donate',
+            activeMatch: '/ru/donate'
+        },
+        {
             text: "v0.2.0",
             items: [
                 {
@@ -87,7 +97,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                         {text: 'DIRECTORY_SAME_PACKAGE', link: 'cli/linter/rules/directory-same-package'},
                         {text: 'PACKAGE_DEFINED', link: 'cli/linter/rules/package-defined'},
                         {text: 'PACKAGE_DIRECTORY_MATCH', link: 'cli/linter/rules/package-directory-match'},
-                        {text: 'PACKAGE_SAME_DIRECTORY Page', link: 'cli/linter/rules/package-same-directory'},
+                        {text: 'PACKAGE_SAME_DIRECTORY', link: 'cli/linter/rules/package-same-directory'},
 
                         {text: 'ENUM_FIRST_VALUE_ZERO', link: 'cli/linter/rules/enum-first-value-zero'},
                         {text: 'ENUM_NO_ALLOW_ALIAS', link: 'cli/linter/rules/enum-no-allow-alias'},
