@@ -1,5 +1,4 @@
 import {defineConfig} from 'vitepress'
-import {search as ruSearch} from './ru'
 
 export const shared = defineConfig({
     title: 'EasyP',
@@ -34,7 +33,7 @@ export const shared = defineConfig({
         ['meta', {name: 'theme-color', content: '#5f67ee'}],
         ['meta', {property: 'og:type', content: 'website'}],
         ['meta', {property: 'og:locale', content: 'en'}],
-        ['meta', {property: 'og:title', content: 'EasyP | Vite & Vue Powered Static Site Generator'}],
+        ['meta', {property: 'og:title', content: 'EasyP | Easy modern protobuf tooling for all your needs.'}],
         ['meta', {property: 'og:site_name', content: 'EasyP'}],
         ['meta', {property: 'og:url', content: 'https://easyp.tech/'}],
         ['script', {src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: ''}]
@@ -46,16 +45,6 @@ export const shared = defineConfig({
         socialLinks: [
             {icon: 'github', link: 'https://github.com/easyp-tech/easyp'}
         ],
-
-        search: {
-            provider: 'algolia',
-            options: {
-                appId: '8J64VVRP8K',
-                apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-                indexName: 'easyp',
-                locales: { ...ruSearch }
-            }
-        },
 
         carbonAds: {code: 'CEBDT27Y', placement: 'easyp-tech'}
     }
