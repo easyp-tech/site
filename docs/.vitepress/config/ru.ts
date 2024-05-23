@@ -66,7 +66,7 @@ function nav(): DefaultTheme.NavItem[] {
             activeMatch: '/ru/donate'
         },
         {
-            text: "v0.2.0",
+            text: version,
             items: [
                 {
                     text: 'Изменения',
