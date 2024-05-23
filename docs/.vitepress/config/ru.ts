@@ -1,8 +1,11 @@
 import {createRequire} from 'module'
 import {defineConfig, type DefaultTheme} from 'vitepress'
+import {GetLatestRelease} from "./shared";
 
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
+
+const version = await GetLatestRelease('easyp-tech', 'easyp')
 
 export const ru = defineConfig({
     lang: 'ru-RU',
@@ -83,6 +86,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {text: 'Для чего EasyP?', link: 'introduction/what-is'},
                 {text: 'Установка EasyP cli', link: 'introduction/install'},
                 {text: 'Быстрый старт', link: 'introduction/quickstart'},
+                {text: 'Новости', link: 'introduction/news'},
             ]
         },
         {

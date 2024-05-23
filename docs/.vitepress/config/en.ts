@@ -1,8 +1,11 @@
 import {createRequire} from 'module'
 import {defineConfig, type DefaultTheme} from 'vitepress'
+import {GetLatestRelease} from "./shared";
 
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
+
+const version = await GetLatestRelease('easyp-tech', 'easyp')
 
 export const en = defineConfig({
     lang: 'en-US',
@@ -45,7 +48,7 @@ function nav(): DefaultTheme.NavItem[] {
             activeMatch: '/donate'
         },
         {
-            text: 'v0.2.0',
+            text: version,
             items: [
                 {
                     text: 'Changelog',
@@ -65,6 +68,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {text: 'What is EasyP?', link: 'introduction/what-is'},
                 {text: 'Install the EasyP cli', link: 'introduction/install'},
                 {text: 'Quick Start', link: 'introduction/quickstart'},
+                {text: 'News', link: 'introduction/news'},
             ]
         },
         {
@@ -94,7 +98,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                         {text: 'PACKAGE_LOWER_SNAKE_CASE', link: 'cli/linter/rules/package-lower-snake-case'},
                         {text: 'PACKAGE_SAME_CSHARP_NAMESPACE', link: 'cli/linter/rules/package-same-csharp-namespace'},
                         {text: 'PACKAGE_SAME_GO_PACKAGE', link: 'cli/linter/rules/package-same-go-package'},
-                        {text: 'PACKAGE_SAME_JAVA_MULTIPLE_FILES', link: 'cli/linter/rules/package-same-java-multiple-files'},
+                        {
+                            text: 'PACKAGE_SAME_JAVA_MULTIPLE_FILES',
+                            link: 'cli/linter/rules/package-same-java-multiple-files'
+                        },
                         {text: 'PACKAGE_SAME_JAVA_PACKAGE', link: 'cli/linter/rules/package-same-java-package'},
                         {text: 'PACKAGE_SAME_PHP_NAMESPACE', link: 'cli/linter/rules/package-same-php-namespace'},
                         {text: 'PACKAGE_SAME_RUBY_PACKAGE', link: 'cli/linter/rules/package-same-ruby-package'},
