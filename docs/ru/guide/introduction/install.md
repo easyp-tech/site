@@ -1,3 +1,37 @@
-# Install the easyp cli
+# Установка easyp cli
 
-## Work in progress
+## Локальная установка
+
+## Установка из пакетного менеджера системы
+
+`В процессе разработки`
+
+## Go install
+
+### Текущий рекомендуемый метод установки
+
+Данный вариант установит последнюю стабильную версию easyp.
+
+```bash
+go install github.com/easyp-tech/easyp/cmd/easyp@{{version}}
+```
+
+## Сборка из исходников
+
+### Не рекомендуется для продакшена
+
+### Требуется Go 1.22 или новее
+
+1. Установить репозиторий
+
+```bash
+git clone https://github.com/easyp-tech/easyp.git
+```
+
+2. Запустить сборку
+
+```bash
+go build ./cmd/easyp
+```
+
+

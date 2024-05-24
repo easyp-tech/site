@@ -1,5 +1,4 @@
 import {defineConfig} from 'vitepress'
-import fetch from 'node-fetch'
 
 export const shared = defineConfig({
     title: 'EasyP',
@@ -70,29 +69,3 @@ export const shared = defineConfig({
         ]
     },
 })
-
-// Get last git tag by url
-interface GithubTag {
-    name: string;
-}
-
-export async function GetLatestRelease(user: string, repo: string): Promise<string> {
-    try {
-        const response = await fetch(`https://api.github.com/repos/${user}/${repo}/tags`);
-
-        if (!response.ok) {
-            throw new Error(`GitHub API returned status code ${response.status}`);
-        }
-
-        const data = await response.json() as GithubTag[];
-
-        if (data.length === 0) {
-            throw new Error('No tags found for this repository');
-        }
-
-        return data[0].name;
-    } catch (error) {
-        console.error(error);
-        return 'unknown version';
-    }
-}
