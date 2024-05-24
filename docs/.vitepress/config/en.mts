@@ -1,11 +1,11 @@
 import {createRequire} from 'module'
 import {defineConfig, type DefaultTheme} from 'vitepress'
-import {GetLatestRelease} from "./shared";
+import {GetLatestRelease} from "../../../src/version/data.mjs";
 
 const require = createRequire(import.meta.url)
 const pkg = require('vitepress/package.json')
 
-const version = await GetLatestRelease('easyp-tech', 'easyp')
+const version = await GetLatestRelease();
 
 export const en = defineConfig({
     lang: 'en-US',

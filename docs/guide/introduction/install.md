@@ -1,22 +1,36 @@
 # Install the easyp cli
 
-## Build from source
+## Local Installation
 
-1. Clone repository
-```bash
-git clone https://github.com/easyp-tech/easyp.git
-```
-2. Build
-```bash
-go build ./cmd/easyp
-```
+### Install from system's package manager
 
-## Install from github
+`Work in progress`
+
+### Go install
+
+#### Current recommended installation method
+
+It will install the latest stable version of easyp.
 
 ```bash
 go install github.com/easyp-tech/easyp/cmd/easyp@latest
 ```
 
-## Install from system's package manager
+### Build from source
 
-`Work in progress`
+#### _**Not recommended for production**_
+
+#### Requires Go 1.22 or later
+
+1. Clone repository
+
+```bash
+git clone https://github.com/easyp-tech/easyp.git
+```
+
+2. Build by golang
+
+```bash
+go build ./cmd/easyp
+```
+
