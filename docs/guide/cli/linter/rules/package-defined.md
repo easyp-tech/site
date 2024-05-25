@@ -13,7 +13,6 @@ This rule checks that all files have a package declaration.
 ### Bad
 
 ```proto
-
 syntax = "proto3";
 
 message Foo {
@@ -27,7 +26,7 @@ message Foo {
 ```proto
 syntax = "proto3";
 
-package foo;
+package foo; // [!code focus]
 
 message Foo {
     string bar = 1;

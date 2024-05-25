@@ -27,11 +27,11 @@ message Foo {
 ### Good
 
 ```proto
-// File: bar/foo.proto
+// File: bar/foo.proto // [!code focus]
 
 syntax = "proto3";
 
-package bar;
+package bar; // [!code focus]
 
 message Foo {
     string bar = 1;

@@ -9,6 +9,7 @@ export const shared = defineConfig({
 
     markdown: {
         math: true,
+        lineNumbers: true,
         codeTransformers: [
             // We use `[!!code` in demo to prevent transformation, here we revert it back.
             {
