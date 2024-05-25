@@ -68,7 +68,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {text: 'What is EasyP?', link: 'introduction/what-is'},
                 {text: 'Install the EasyP cli', link: 'introduction/install'},
                 {text: 'Quick Start', link: 'introduction/quickstart'},
-                {text: 'News', link: 'introduction/news'},
             ]
         },
         {
@@ -116,7 +115,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                         {text: 'RPC_REQUEST_STANDARD_NAME', link: 'cli/linter/rules/rpc-request-standard-name'},
                         {text: 'RPC_RESPONSE_STANDARD_NAME', link: 'cli/linter/rules/rpc-response-standard-name'},
                         {text: 'PACKAGE_VERSION_SUFFIX', link: 'cli/linter/rules/package-version-suffix'},
-                        {text: 'PROTOVALIDATE', link: 'cli/linter/rules/protovalidate'},
+                        // {text: 'PROTOVALIDATE', link: 'cli/linter/rules/protovalidate'},
                         {text: 'SERVICE_SUFFIX', link: 'cli/linter/rules/service-suffix'},
 
                         {text: 'COMMENT_ENUM', link: 'cli/linter/rules/comment-enum'},
@@ -130,7 +129,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                         {text: 'RPC_NO_CLIENT_STREAMING', link: 'cli/linter/rules/rpc-no-client-streaming'},
                         {text: 'RPC_NO_SERVER_STREAMING', link: 'cli/linter/rules/rpc-no-server-streaming'},
 
-                        {text: 'PACKAGE_NO_IMPORT_CYCLE', link: 'cli/linter/rules/package-no-import-cycle'},
+                        // {text: 'PACKAGE_NO_IMPORT_CYCLE', link: 'cli/linter/rules/package-no-import-cycle'},
                     ],
                 },
                 {
