@@ -1,37 +1,31 @@
 {
-  "hash": "75dc0f41",
-  "configHash": "d7dba033",
+  "hash": "16dc29b6",
+  "configHash": "369491cf",
   "lockfileHash": "45ffcc43",
-  "browserHash": "c17d300b",
+  "browserHash": "2014393c",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "667734e6",
+      "fileHash": "1141caa7",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.1.3_vue@3.4.27_typescript@5.4.5_/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "3402e9a3",
+      "fileHash": "d00a6e7c",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/.pnpm/@vueuse+core@10.9.0_vue@3.4.27_typescript@5.4.5_/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "1e5c5b24",
+      "fileHash": "e8557f6f",
       "needsInterop": false
     },
     "@theme/index": {
       "src": "../../../../node_modules/.pnpm/vitepress@1.1.4_@algolia+client-search@4.23.3_@types+node@20.12.11_axios@1.6.8_markdown-it-ma_rqgro76j3qyw4p4joai5tb5nqu/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "b570e8c4",
-      "needsInterop": false
-    },
-    "node-fetch": {
-      "src": "../../../../node_modules/.pnpm/node-fetch@3.3.2/node_modules/node-fetch/src/index.js",
-      "file": "node-fetch.js",
-      "fileHash": "fe71f7ca",
+      "fileHash": "316eb632",
       "needsInterop": false
     }
   },
@@ -41,15 +35,6 @@
     },
     "chunk-FHZO4SJ4": {
       "file": "chunk-FHZO4SJ4.js"
-    },
-    "multipart-parser-SSJYQJW2": {
-      "file": "multipart-parser-SSJYQJW2.js"
-    },
-    "chunk-FIFEK7PJ": {
-      "file": "chunk-FIFEK7PJ.js"
-    },
-    "chunk-PVEC6WPY": {
-      "file": "chunk-PVEC6WPY.js"
     }
   }
 }
