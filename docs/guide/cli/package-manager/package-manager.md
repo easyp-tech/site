@@ -2,7 +2,7 @@
 
 ## Usage
 
-To usage `easpy` as a package manager use `mod download` command:
+To usage `easyp` as a package manager use `mod download` command:
 
 ```bash
 easyp -cfg example.easyp.yaml mod download
