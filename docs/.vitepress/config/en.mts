@@ -51,8 +51,8 @@ function nav(): DefaultTheme.NavItem[] {
             text: version,
             items: [
                 {
-                    text: 'Changelog',
-                    link: 'https://github.com/easyp-tech/easyp/blob/main/CHANGELOG.md'
+                    text: 'README',
+                    link: 'https://github.com/easyp-tech/easyp/blob/main/README.md'
                 }
             ]
         }
