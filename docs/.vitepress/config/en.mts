@@ -144,6 +144,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                     text: 'Breaking Changes checks',
                     link: 'cli/breaking-changes/breaking-changes',
                 },
+                {
+                    text: 'Auto completion',
+                    link: 'cli/auto-completion/auto-completion',
+                },
             ]
         },
         {
