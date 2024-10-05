@@ -139,6 +139,11 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 {
                     text: 'Generator',
                     link: 'cli/generator/generator',
+                    collapsed: true,
+                    items: [
+                        {text: 'Go', link: 'cli/generator/examples/go'},
+                        {text: 'gRPC-Gateway', link: 'cli/generator/examples/grpc-gateway'},
+                    ]
                 },
                 {
                     text: 'Breaking Changes checks',
