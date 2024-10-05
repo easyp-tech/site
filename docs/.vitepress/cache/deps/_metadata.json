@@ -1,40 +1,40 @@
 {
-  "hash": "16dc29b6",
-  "configHash": "369491cf",
-  "lockfileHash": "45ffcc43",
-  "browserHash": "2014393c",
+  "hash": "91068227",
+  "configHash": "80260968",
+  "lockfileHash": "3d2b8898",
+  "browserHash": "cdf3a531",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/.pnpm/vue@3.4.27_typescript@5.4.5/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/.pnpm/vue@3.5.11_typescript@5.6.2/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "1141caa7",
+      "fileHash": "f731d41c",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
-      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.1.3_vue@3.4.27_typescript@5.4.5_/node_modules/@vue/devtools-api/dist/index.js",
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.4.6/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "d00a6e7c",
+      "fileHash": "81707e2f",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
-      "src": "../../../../node_modules/.pnpm/@vueuse+core@10.9.0_vue@3.4.27_typescript@5.4.5_/node_modules/@vueuse/core/index.mjs",
+      "src": "../../../../node_modules/.pnpm/@vueuse+core@11.1.0_vue@3.5.11_typescript@5.6.2_/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "e8557f6f",
+      "fileHash": "b3f8fa9a",
       "needsInterop": false
     },
     "@theme/index": {
-      "src": "../../../../node_modules/.pnpm/vitepress@1.1.4_@algolia+client-search@4.23.3_@types+node@20.12.11_axios@1.6.8_markdown-it-ma_rqgro76j3qyw4p4joai5tb5nqu/node_modules/vitepress/dist/client/theme-default/index.js",
+      "src": "../../../../node_modules/.pnpm/vitepress@1.3.4_@algolia+client-search@5.7.0_@types+node@22.7.4_axios@1.7.7_markdown-it-mathj_3w3ku23ie6qi2lkvnipzl4mszm/node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "316eb632",
+      "fileHash": "9211ecd6",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-ESLOWYQ6": {
-      "file": "chunk-ESLOWYQ6.js"
+    "chunk-HDXP4QE6": {
+      "file": "chunk-HDXP4QE6.js"
     },
-    "chunk-FHZO4SJ4": {
-      "file": "chunk-FHZO4SJ4.js"
+    "chunk-5QPR3HWM": {
+      "file": "chunk-5QPR3HWM.js"
     }
   }
 }
