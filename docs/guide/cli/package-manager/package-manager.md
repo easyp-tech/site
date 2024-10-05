@@ -3,10 +3,10 @@
 EasyP is a versatile tool designed for working with proto files. In this section, we will focus on its capabilities as a package manager, which significantly simplifies the management of proto dependencies in your projects.
 
 Key features of the EasyP package manager:
-- Proto Dependency Management: Quickly add, update, and delete proto file dependencies in your project.
-- YAML-Based Configuration: Package settings are managed via convenient and understandable YAML files.
+- `Proto` Dependency Management: Quickly add, update, and delete proto file dependencies in your project.
+- `YAML-Based` Configuration: Package settings are managed via convenient and understandable YAML files.
 - Flexibility and Version Control: Support for using Git tags and full commit hashes to specify exact module versions.
-- 'go get' Principle: The easyp mod download command operates on the same principle as 'go get' in Go, allowing any Git repository to be used as a package.
+- `go get` Principle: The EasyP mod download command operates on the same principle as `go get` in Go, allowing any Git repository to be used as a package.
 
 ## Usage
 
@@ -30,7 +30,7 @@ Without specifying a version: If no version is specified, the latest tag will be
 
 ### Command for Downloading Modules:
 
-The mod download command can use a configuration file specified with the -cfg flag. If the -cfg flag is not specified, the default configuration file easyp.yaml in the current directory will be used.
+The mod download command can use a configuration file specified with the `-cfg` flag. If the `-cfg` flag is not specified, the default configuration file `easyp.yaml` in the current directory will be used.
 
 # Using a specific configuration file
 ```bash
@@ -43,5 +43,5 @@ easyp mod download
 ```
 
 ::: info
-By default, EasyP uses the $HOME/.easyp directory to store the cache and downloaded modules. You can override this path by setting the EASYPPATH environment variable.
+By default, EasyP uses the `$HOME/.easyp` directory to store the cache and downloaded modules. You can override this path by setting the `EASYPPATH` environment variable.
 :::
