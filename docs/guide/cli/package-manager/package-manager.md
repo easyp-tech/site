@@ -30,14 +30,14 @@ Without specifying a version: If no version is specified, the latest tag will be
 
 ### Command for Downloading Modules:
 
-The mod download command can use a configuration file specified with the -cfg flag. If the -cfg flag is not specified, the default configuration file easyp.yaml in the current directory will be used.
+The mod download command can use a configuration file specified with the -cfg flag. If the -cfg flag is not specified, the default configuration file `easyp.yaml` in the current directory will be used.
 
-# Using a specific configuration file
+### Using a specific configuration file
 ```bash
 easyp -cfg example.easyp.yaml mod download
 ```
 
-# Without specifying a configuration file (uses easyp.yaml in the current directory)
+### Without specifying a configuration file (uses easyp.yaml in the current directory)
 ```bash
 easyp mod download
 ```
