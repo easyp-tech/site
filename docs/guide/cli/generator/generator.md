@@ -18,12 +18,22 @@ EasyP includes a powerful generator that simplifies the process of generating co
     - Use the same parameters as protoc plugins, directly in the configuration file.
     - Support for multiple plugins and their parameters in a single configuration.
 
+4. Generate Code from Multiple Sources:
+    - Generate code from local directories or remote repositories.
+    - Easily integrate with existing projects and repositories.
+
 ## Example Configuration File
 
 The `YAML` configuration file allows you to specify all parameters for code generation, including the use of various plugins and their options:
 
 ```yaml
 generate:
+  inputs:
+    - directory: "proto"
+    - git_repo:
+        url: "https://github.com/acme/weather.git"
+        branch: "main"
+        sub_directory: "proto"
   plugins:
     - name: go
       out: .
@@ -38,6 +48,14 @@ generate:
 
 ### Explanation of Parameters:
 
+inputs:
+- `directory`: The local directory containing the proto files to be used for code generation.
+- `git_repo`: The remote repository containing the proto files to be used for code generation.
+  - `url`: The URL of the remote repository.
+  - `branch`: The branch of the repository to be used.
+  - `sub_directory`: The subdirectory within the repository containing the proto files.
+
+plugins:
 - `name`: The name of the plugin to be used for code generation (e.g., go or go-grpc).
 - `out`: The directory where the generated files will be output.
 - `opts`: Options to be passed to the plugin. These options correspond to the parameters used in the protoc command.

@@ -1,14 +1,27 @@
-# Install the easyp cli
-
-## Local Installation
+# Install the EasyP cli
 
 ### Install from system's package manager
 
+##### Recommended installation method
+
+#### Homebrew
+
+You can install a binary release on macOS using brew:
+
+```bash
+brew install easyp-tech/tap/easyp
+```
+
 `Work in progress`
+apt, yum, pacman, etc.
+
+## Local Installation
+
+#### _**Not recommended**_
+
+#### Requires Go 1.24 or later
 
 ### Go install
-
-#### Current recommended installation method
 
 It will install the latest stable version of easyp.
 
@@ -18,9 +31,6 @@ go install github.com/easyp-tech/easyp/cmd/easyp@latest
 
 ### Build from source
 
-#### _**Not recommended for production**_
-
-#### Requires Go 1.22 or later
 
 1. Clone repository
 
