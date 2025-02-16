@@ -143,6 +143,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                     items: [
                         {text: 'Go', link: 'cli/generator/examples/go'},
                         {text: 'gRPC-Gateway', link: 'cli/generator/examples/grpc-gateway'},
+                        {text: 'Validate', link: 'cli/generator/examples/validate'},
                     ]
                 },
                 {

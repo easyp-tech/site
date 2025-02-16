@@ -48,3 +48,6 @@ You can easily switch to EasyP without worrying about compatibility issues or re
   Ensure that your API changes don't break backward compatibility with EasyP's built-in checker.
 
 By using EasyP, you can focus on developing your application without worrying about the complexities of working with protobuf.
+
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/easyp-tech/easyp.svg?variant=adaptive)](https://starchart.cc/easyp-tech/easyp)
